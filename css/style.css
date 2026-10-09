@@ -272,6 +272,8 @@ html.js .page-wrapper { opacity: 0; animation: page-reveal 0s 3s forwards; }
 }
 .nav_cta:hover { background: var(--abyss-blue); }
 
+/* Rozsuwane menu tylko tam, gdzie linki nie mieszczą się w pasku */
+@media screen and (min-width: 1281px) { .sidenav__button, .sidenav__nav { display: none !important; } }
 .sidenav__button { position: relative; z-index: 10; display: flex; align-items: center; justify-content: flex-end; gap: .625em; margin: -1em; padding: 1em; background: transparent; border: 0; cursor: pointer; color: inherit; }
 .sidenav__button-text { display: flex; flex-direction: column; align-items: flex-end; height: 1.5em; overflow: hidden; }
 .sidenav__button-label { display: inline-block; font-size: 1rem; line-height: 1.5em; margin: 0; }
@@ -526,8 +528,10 @@ html.js .page-wrapper { opacity: 0; animation: page-reveal 0s 3s forwards; }
 .module-card.is-intro h3 { flex: none; }
 .module-card_main { display: flex; flex-direction: column; gap: 1rem; }
 .module-card_main p { font-size: 1rem; line-height: 1.5; }
-.module-card_label { align-self: flex-start; padding: .35rem .55rem; border-radius: .25rem; background: var(--white); color: var(--black); font-size: .75rem; }
-.module-card.is-intro .module-card_label { align-self: center; }
+.module-card_label { display: flex; align-items: center; gap: 1rem; width: 100%; color: var(--blue-ice); font-size: .875rem; letter-spacing: .08em; }
+.module-card_label::after { content: ""; flex: 1; height: 1px; background: rgba(159, 193, 220, .3); }
+.module-card.is-intro .module-card_label { flex: none; width: auto; }
+.module-card.is-intro .module-card_label::after { display: none; }
 .module-card_tools { margin-top: auto; display: flex; flex-direction: column; gap: .75rem; padding-top: 1.5rem; border-top: 1px solid var(--white-10); }
 .tool-list { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
 .tool-list li { display: flex; gap: .75rem; align-items: flex-start; font-size: .9375rem; line-height: 1.4; }
@@ -717,7 +721,7 @@ html.js .page-wrapper { opacity: 0; animation: page-reveal 0s 3s forwards; }
   .section-head { padding-left: 0; margin-bottom: 2.5rem; }
   .module-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .module-card.is-intro, .module-card.is-intro .module-card_main { flex-direction: column; align-items: flex-start; gap: 1rem; }
-  .module-card.is-intro .module-card_label { align-self: flex-start; }
+
   .program_summary .button { margin-left: 0; }
   .is-tablet-hide { display: none !important; }
   .nav_inner { padding: 1rem; }
