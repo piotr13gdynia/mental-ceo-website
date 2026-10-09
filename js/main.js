@@ -10,7 +10,6 @@
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const desktopQuery = window.matchMedia('(min-width: 992px)');
-  const mobileQuery = window.matchMedia('(max-width: 767px)');
   const $ = (sel, ctx) => (ctx || document).querySelector(sel);
   const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
 
@@ -217,40 +216,24 @@
   }
 
   /* ------------------------------------------------------------------
-     Hero video (desktop / mobile source)
+     Po co Ci ta firma: film opens from a window-sized frame to full width
      ------------------------------------------------------------------ */
-  function initHeroVideo() {
-    const video = $('[data-hero-video]');
-    if (!video) return;
-    const desktopPoster = video.getAttribute('poster');
-    const tryPlay = () => {
-      if (reduceMotion) return;
-      const p = video.play();
-      if (p && p.catch) p.catch(() => {});
+  function initFilmWindow() {
+    const film = $('[data-film]');
+    if (!film || reduceMotion) return;
+    const media = $('[data-film-media]', film);
+    const video = $('video', media);
+    const text = $('[data-film-text]', film);
+    const mm = gsap.matchMedia();
+    const build = (from) => {
+      const tl = gsap.timeline({ scrollTrigger: { trigger: film, start: 'top bottom', end: 'top top', scrub: 0.6 } });
+      tl.fromTo(media, { clipPath: from }, { clipPath: 'inset(0% 0% 0% 0% round 0rem)', ease: 'none' }, 0)
+        .fromTo(video, { scale: 1.25 }, { scale: 1, ease: 'none' }, 0)
+        .fromTo(text, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, ease: 'power2.out', duration: 0.4 }, 0.6);
+      return () => { tl.scrollTrigger && tl.scrollTrigger.kill(); tl.kill(); gsap.set([media, video, text], { clearProps: 'all' }); };
     };
-    const markLoaded = () => { video.classList.add('is-loaded'); if (video.paused) tryPlay(); };
-    video.addEventListener('canplay', markLoaded);
-    video.addEventListener('loadeddata', markLoaded);
-
-    const applySource = () => {
-      const useMobile = mobileQuery.matches && !!video.dataset.srcMobile;
-      const src = useMobile ? video.dataset.srcMobile : video.dataset.srcDesktop;
-      if (video.dataset.currentSource === src) return;
-      video.dataset.currentSource = src;
-      video.setAttribute('poster', useMobile && video.dataset.posterMobile ? video.dataset.posterMobile : desktopPoster);
-      video.classList.remove('is-loaded');
-      if (reduceMotion) {
-        video.removeAttribute('autoplay');
-        video.classList.add('is-loaded');
-        return;
-      }
-      video.src = src;
-      video.load();
-      tryPlay();
-    };
-    applySource();
-    mobileQuery.addEventListener('change', applySource);
-    if (video.readyState >= 3) markLoaded();
+    mm.add('(min-width: 768px)', () => build('inset(14% 30% 14% 30% round 1.5rem)'));
+    mm.add('(max-width: 767px)', () => build('inset(12% 10% 12% 10% round 1rem)'));
   }
 
   /* ------------------------------------------------------------------
@@ -368,7 +351,6 @@
   function init() {
     initNav();
     initSideNav();
-    initHeroVideo();
     initLazyVideos();
     initAccordions();
     initSituations();
@@ -381,6 +363,7 @@
       initFades();
       initBackgroundLines();
       initFooterParallax();
+      initFilmWindow();
       gsap.set('.page-wrapper', { opacity: 1 });
       ScrollTrigger.refresh();
 

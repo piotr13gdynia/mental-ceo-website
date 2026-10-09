@@ -114,6 +114,7 @@
             <span class="main-hero_heading-h" data-heading="hero-blur">Spokojna głowa</span>
             <span class="main-hero_heading-h is-auto-left" data-heading="hero-blur">właściciela</span>
           </h1>
+          <div class="main-hero_body">
           <div class="main-hero_sub-heading" fade-in>
             <h2 class="main-hero_lead">Pierwszy krok do odzyskania radości z&nbsp;życia i&nbsp;z&nbsp;biznesu.</h2>
             <p class="main-hero_subtitle">Naucz się lepiej zarządzać sobą i&nbsp;firmą, pilnując przy tym własnych potrzeb i&nbsp;granic.</p>
@@ -133,17 +134,18 @@
             </div>
           </div>
 
+          <!-- Film wyjaśniający z Mariuszem: odtwarzacz czeka na nagranie -->
+          <figure class="hero-player" fade-in-self>
+            <div class="hero-player_frame">
+              <img class="hero-player_poster" src="assets/img/mariusz.jpg" alt="" loading="eager">
+              <span class="hero-player_play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l10.5-6.5L8 5.5z" fill="currentColor"/></svg></span>
+            </div>
+            <figcaption class="main-hero_note text-label is-white-70">Kurs ma charakter edukacyjny. Nie jest terapią ani świadczeniem zdrowotnym.</figcaption>
+          </figure>
+          </div>
+
           <div class="cross-wrap is-hero-1"><svg class="cross-image" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M5 0v10M0 5h10" stroke="currentColor"/></svg></div>
         </div>
-      </div>
-    </div>
-
-    <div class="m-bottom_overlay"></div>
-
-    <div class="m-hero_video-wrapper-desktop">
-      <div class="m-hero_video-overlay"></div>
-      <div class="main-hero_video-bg">
-        <video playsinline autoplay muted loop preload="metadata" poster="assets/video/hero-poster.jpg" data-hero-video data-src-desktop="assets/video/hero.mp4" aria-hidden="true"></video>
       </div>
     </div>
 
@@ -153,22 +155,6 @@
         <div class="background-lines_line opacity-10" data-background-lines="line"></div>
         <div class="background-lines_line opacity-10" data-background-lines="line"></div>
         <div class="background-lines_line" data-background-lines="line"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================ FILM WYJAŚNIAJĄCY -->
-  <section class="section_explainer" data-nav-theme="dark">
-    <div class="padding-global">
-      <div class="container-large">
-        <!-- Film wyjaśniający z Mariuszem: odtwarzacz czeka na nagranie -->
-        <figure class="hero-player" fade-in-self>
-          <div class="hero-player_frame">
-            <img class="hero-player_poster" src="assets/img/mariusz.jpg" alt="" loading="lazy">
-            <span class="hero-player_play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l10.5-6.5L8 5.5z" fill="currentColor"/></svg></span>
-          </div>
-          <figcaption class="main-hero_note text-label is-white-70">Kurs ma charakter edukacyjny. Nie jest terapią ani świadczeniem zdrowotnym.</figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -223,13 +209,25 @@
 
   <!-- ============================================================ PO CO CI TA FIRMA -->
   <section class="section_purpose" id="po-co" data-nav-theme="dark">
+    <div class="purpose_film" data-film>
+      <div class="purpose_film-media" data-film-media>
+        <video class="lazy" playsinline autoplay muted loop preload="none" poster="assets/video/hero-poster.jpg" aria-hidden="true">
+          <source data-src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="purpose_film-overlay"></div>
+      </div>
+      <div class="padding-global purpose_film-content">
+        <div class="container-large">
+          <div class="purpose_film-text" data-film-text>
+            <div class="text-label">Po co Ci ta firma</div>
+            <h2 class="heading-style-h1">Firma miała dać wolność. Gdzieś po drodze sama stała się celem.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="padding-global">
       <div class="container-large">
         <div class="purpose_grid">
-          <div class="purpose_left">
-            <div class="text-label is-white-70" fade-in-self>Po co Ci ta firma</div>
-            <h2 class="heading-style-h2" text-animate="lines">Firma miała dać wolność. Gdzieś po drodze sama stała się celem.</h2>
-          </div>
           <div class="purpose_copy text-color-white-70" fade-in>
             <p>Pracujesz, żeby firma działała. Firma działa, żebyś mógł pracować. Pytanie „po co to wszystko” leży w&nbsp;szufladzie od kilku lat, bo nie było czasu go wyjąć.</p>
             <p>Wszystkie kursy o&nbsp;balansie mówią: zadbaj o&nbsp;siebie. Ten kurs pyta: ale po co? Z&nbsp;odpowiedzi na to pytanie wyprowadza granice. W&nbsp;kalendarzu, w&nbsp;telefonie, w&nbsp;zespole, w&nbsp;domu, a&nbsp;wraz z&nbsp;nimi decyzje, które podejmujesz z&nbsp;celu, a&nbsp;nie ze strachu.</p>
