@@ -43,7 +43,7 @@
 
   function scrollToTarget(target, opts) {
     if (lenis) {
-      lenis.scrollTo(target, Object.assign({ duration: 1.6, easing: (t) => 1 - Math.pow(1 - t, 3) }, opts || {}));
+      lenis.scrollTo(target, Object.assign({ force: true, duration: 1.6, easing: (t) => 1 - Math.pow(1 - t, 3) }, opts || {}));
     } else if (typeof target === 'number') {
       window.scrollTo({ top: target, behavior: 'smooth' });
     } else {
@@ -58,7 +58,9 @@
       const el = document.querySelector(id);
       if (!el) return;
       e.preventDefault();
-      scrollToTarget(el);
+      // From the side menu: wait until it has closed and unlocked scrolling
+      if (html.classList.contains('is-nav-open')) setTimeout(() => scrollToTarget(el), 0);
+      else scrollToTarget(el);
     });
   });
 
