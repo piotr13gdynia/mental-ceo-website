@@ -73,12 +73,12 @@
       </div>
       <div class="sidenav__menu-inner">
         <ul class="sidenav__menu-list">
-          <li class="sidenav__menu-list-item"><a href="#dla-kogo" class="sidenav__menu-link is-first" data-sidenav-link><span class="sidenav__menu-link-heading">Dla kogo</span><span class="sidenav__menu-link-eyebrow">01</span></a></li>
-          <li class="sidenav__menu-list-item"><a href="#program" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Program kursu</span><span class="sidenav__menu-link-eyebrow">02</span></a></li>
-          <li class="sidenav__menu-list-item"><a href="#prowadzacy" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Prowadzący</span><span class="sidenav__menu-link-eyebrow">03</span></a></li>
-          <li class="sidenav__menu-list-item"><a href="#pakiety" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Pakiety</span><span class="sidenav__menu-link-eyebrow">04</span></a></li>
-          <li class="sidenav__menu-list-item"><a href="#faq" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Pytania</span><span class="sidenav__menu-link-eyebrow">05</span></a></li>
-          <li class="sidenav__menu-list-item"><a href="#pakiety" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Dołącz do kursu</span><span class="sidenav__menu-link-eyebrow">06</span></a></li>
+          <li class="sidenav__menu-list-item"><a href="#dla-kogo" class="sidenav__menu-link is-first" data-sidenav-link><span class="sidenav__menu-link-heading">Dla kogo</span></a></li>
+          <li class="sidenav__menu-list-item"><a href="#program" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Program kursu</span></a></li>
+          <li class="sidenav__menu-list-item"><a href="#prowadzacy" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Prowadzący</span></a></li>
+          <li class="sidenav__menu-list-item"><a href="#pakiety" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Pakiety</span></a></li>
+          <li class="sidenav__menu-list-item"><a href="#faq" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Pytania</span></a></li>
+          <li class="sidenav__menu-list-item"><a href="#pakiety" class="sidenav__menu-link" data-sidenav-link><span class="sidenav__menu-link-heading">Dołącz do kursu</span></a></li>
         </ul>
         <div class="sidenav__bottom-wrap">
           <div class="sidenav__menu-details">
@@ -133,14 +133,6 @@
             </div>
           </div>
 
-          <!-- Film wyjaśniający z Mariuszem: odtwarzacz czeka na nagranie -->
-          <figure class="hero-player" fade-in-self>
-            <div class="hero-player_frame" data-tilt>
-              <img class="hero-player_poster" src="assets/img/mariusz.jpg" alt="" loading="eager">
-              <span class="hero-player_play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l10.5-6.5L8 5.5z" fill="currentColor"/></svg></span>
-            </div>
-            <figcaption class="main-hero_note text-label is-white-70">Kurs ma charakter edukacyjny. Nie jest terapią ani świadczeniem zdrowotnym.</figcaption>
-          </figure>
           <div class="cross-wrap is-hero-1"><svg class="cross-image" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M5 0v10M0 5h10" stroke="currentColor"/></svg></div>
         </div>
       </div>
@@ -165,19 +157,29 @@
     </div>
   </section>
 
-  <!-- ============================================================ DLA KOGO -->
-  <section class="section_scroll" id="dla-kogo" data-nav-theme="dark">
+  <!-- ============================================================ FILM WYJAŚNIAJĄCY -->
+  <section class="section_explainer" data-nav-theme="dark">
     <div class="padding-global">
       <div class="container-large">
-        <div class="scroll_wrapper">
-          <div class="scroll_comp">
-            <div class="scroll_heading">
-              <div class="text-label is-white-70 scroll_eyebrow" fade-in-self>Dla kogo</div>
-              <h2 class="heading-style-h3" data-heading="scrub">Z zewnątrz firma wygląda dobrze. W&nbsp;środku właściciel toczy bitwę na kilku frontach.</h2>
-            </div>
-            <div class="cross-wrap is-scrub-top"><svg class="cross-image" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M5 0v10M0 5h10" stroke="currentColor"/></svg></div>
-            <div class="cross-wrap is-scrub-bottom"><svg class="cross-image" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M5 0v10M0 5h10" stroke="currentColor"/></svg></div>
+        <!-- Film wyjaśniający z Mariuszem: odtwarzacz czeka na nagranie -->
+        <figure class="hero-player" fade-in-self>
+          <div class="hero-player_frame">
+            <img class="hero-player_poster" src="assets/img/mariusz.jpg" alt="" loading="lazy">
+            <span class="hero-player_play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l10.5-6.5L8 5.5z" fill="currentColor"/></svg></span>
           </div>
+          <figcaption class="main-hero_note text-label is-white-70">Kurs ma charakter edukacyjny. Nie jest terapią ani świadczeniem zdrowotnym.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ DLA KOGO -->
+  <section class="section_who" id="dla-kogo" data-nav-theme="dark">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="section-head">
+          <div class="text-label is-white-70" fade-in-self>Dla kogo</div>
+          <h2 class="heading-style-h2" text-animate="lines">Z zewnątrz firma wygląda dobrze. W&nbsp;środku właściciel toczy bitwę na kilku frontach.</h2>
         </div>
 
         <div class="situations" data-situations>
@@ -186,16 +188,16 @@
             <span class="situations_count text-label" aria-live="polite"><b data-situations-count>0</b>&nbsp;/&nbsp;10</span>
           </div>
           <ol class="situations_list" fade-in>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">01</span><span class="situations_text">Sprawdzasz konto kilka razy dziennie, tak z&nbsp;nawyku. Musisz wiedzieć o&nbsp;wszystkim.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">02</span><span class="situations_text">O&nbsp;każdym problemie w&nbsp;firmie wiesz i&nbsp;w&nbsp;każdym uczestniczysz, nawet jeśli nie rozwiązujesz go osobiście.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">03</span><span class="situations_text">Jesteś cały czas w&nbsp;gotowości. Czekasz, aż coś wybuchnie, więc trudno Ci usiąść do pracy w&nbsp;skupieniu na dłużej niż kwadrans.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">04</span><span class="situations_text">Urlop z&nbsp;laptopem. Telefon leży przy łóżku.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">05</span><span class="situations_text">Cisza jest trudna, bo w&nbsp;ciszy wracają myśli o&nbsp;firmie. Uciekasz w&nbsp;telefon, w&nbsp;scrollowanie, w&nbsp;robotę, czasem w&nbsp;alkohol.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">06</span><span class="situations_text">Stracony klient albo słabszy miesiąc i&nbsp;w&nbsp;głowie od razu jest bankructwo. Panika uruchamia się sama.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">07</span><span class="situations_text">Kiedy jest za spokojnie, zastanawiasz się, co jest nie tak, i&nbsp;zaczynasz coś zmieniać. Byle coś robić.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">08</span><span class="situations_text">Rodzina dostaje resztki energii. Na czas z&nbsp;dziećmi nie ma już przestrzeni.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">09</span><span class="situations_text">W&nbsp;niedzielę pojawia się stres i&nbsp;niepokój przed poniedziałkiem. W&nbsp;poniedziałek często czujesz się beznadziejnie.</span></button></li>
-            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="text-label situations_num">10</span><span class="situations_text">Chcesz w&nbsp;końcu zaznać spokoju i&nbsp;przestać codziennie bać się o&nbsp;firmę.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Sprawdzasz konto kilka razy dziennie, tak z&nbsp;nawyku. Musisz wiedzieć o&nbsp;wszystkim.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">O&nbsp;każdym problemie w&nbsp;firmie wiesz i&nbsp;w&nbsp;każdym uczestniczysz, nawet jeśli nie rozwiązujesz go osobiście.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Jesteś cały czas w&nbsp;gotowości. Czekasz, aż coś wybuchnie, więc trudno Ci usiąść do pracy w&nbsp;skupieniu na dłużej niż kwadrans.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Urlop z&nbsp;laptopem. Telefon leży przy łóżku.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Cisza jest trudna, bo w&nbsp;ciszy wracają myśli o&nbsp;firmie. Uciekasz w&nbsp;telefon, w&nbsp;scrollowanie, w&nbsp;robotę, czasem w&nbsp;alkohol.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Stracony klient albo słabszy miesiąc i&nbsp;w&nbsp;głowie od razu jest bankructwo. Panika uruchamia się sama.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Kiedy jest za spokojnie, zastanawiasz się, co jest nie tak, i&nbsp;zaczynasz coś zmieniać. Byle coś robić.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Rodzina dostaje resztki energii. Na czas z&nbsp;dziećmi nie ma już przestrzeni.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">W&nbsp;niedzielę pojawia się stres i&nbsp;niepokój przed poniedziałkiem. W&nbsp;poniedziałek często czujesz się beznadziejnie.</span></button></li>
+            <li><button type="button" class="situations_item" aria-pressed="false" data-situation><span class="ui-check"></span><span class="situations_text">Chcesz w&nbsp;końcu zaznać spokoju i&nbsp;przestać codziennie bać się o&nbsp;firmę.</span></button></li>
           </ol>
 
           <div class="quote-banner glow-border" data-tilt fade-in-self>
@@ -235,17 +237,14 @@
         </div>
         <ol class="card-row" fade-in>
           <li class="info-card glow-border">
-            <span class="text-label is-white-70">01</span>
             <h3 class="heading-style-h4">Po co</h3>
             <p class="text-color-white-70">Jedno zdanie: po co mam tę firmę.</p>
           </li>
           <li class="info-card glow-border">
-            <span class="text-label is-white-70">02</span>
             <h3 class="heading-style-h4">Granice</h3>
             <p class="text-color-white-70">Wyprowadzone z&nbsp;„po co”. Pilnowane przez kalendarz, a&nbsp;nie przez zaciskanie zębów.</p>
           </li>
           <li class="info-card glow-border">
-            <span class="text-label is-white-70">03</span>
             <h3 class="heading-style-h4">Decyzje</h3>
             <p class="text-color-white-70">Jedno pytanie kontrolne: dla kogo albo dla czego to robię?</p>
           </li>
@@ -255,68 +254,28 @@
   </section>
 
   <!-- ============================================================ OBIETNICA -->
-  <section class="section_intro" data-nav-theme="dark">
+  <section class="section_promise-intro" id="trzy-rzeczy" data-nav-theme="dark">
     <div class="padding-global">
       <div class="container-large">
-        <div class="intro_comp">
-          <div class="intro_heading-wrap">
-            <h2 class="intro_heading heading-style-h2" data-heading="blur">To nie jest kolejny kurs o&nbsp;balansie.</h2>
-            <p class="intro_paragraph text-color-white-70" fade-in-self>Pracuj mniej, odpoczywaj więcej, ustaw granice. Wiesz to od lat, a&nbsp;mimo to siedzisz przy laptopie o&nbsp;dwudziestej trzeciej. Wiedza nie jest Twoim problemem. Dlatego w&nbsp;każdej lekcji dostajesz trzy rzeczy.</p>
-          </div>
+        <div class="section-head is-center">
+          <h2 class="heading-style-h2" text-animate="lines">To nie jest kolejny kurs o&nbsp;balansie.</h2>
+          <p class="section-lead text-color-white-70" fade-in-self>Pracuj mniej, odpoczywaj więcej, ustaw granice. Wiesz to od lat, a&nbsp;mimo to siedzisz przy laptopie o&nbsp;dwudziestej trzeciej. Wiedza nie jest Twoim problemem. Dlatego w&nbsp;każdej lekcji dostajesz trzy rzeczy.</p>
         </div>
-      </div>
-    </div>
-    <div class="background-lines is-inverted" data-background-lines="wrapper">
-      <div class="background-lines_container">
-        <div class="background-lines_line" data-background-lines="line"></div>
-        <div class="background-lines_line opacity-10" data-background-lines="line"></div>
-        <div class="background-lines_line opacity-10" data-background-lines="line"></div>
-        <div class="background-lines_line" data-background-lines="line"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section_sticky-cards" id="trzy-rzeczy" data-nav-theme="dark">
-    <div class="padding-global">
-      <div class="container-large">
-        <div class="sticky-cards_comp" data-benefits-animation="wrapper">
-          <div class="sticky_cards_wrapper">
-            <div class="sticky-cards_heading-wrapper">
-              <div class="sticky-cards_heading-wrap" data-benefits-animation="heading">
-                <h3 class="heading-style-h3"><span class="text-color-white-70">Mechanizm.</span> Co się dzieje w&nbsp;Twojej głowie i&nbsp;dlaczego.</h3>
-              </div>
-              <div class="sticky-cards_heading-wrap" data-benefits-animation="heading">
-                <h3 class="heading-style-h3"><span class="text-color-white-70">Nazwa.</span> Rzecz nazwana przestaje być cechą charakteru.</h3>
-              </div>
-              <div class="sticky-cards_heading-wrap" data-benefits-animation="heading">
-                <h3 class="heading-style-h3"><span class="text-color-white-70">Narzędzie.</span> Arkusz, protokół albo jedno pytanie.</h3>
-              </div>
-            </div>
-
-            <div class="sticky-cards_card-wrapper">
-              <div class="sticky-card_wrap" data-benefits-animation="card">
-                <div class="ui-card is-text">
-                  <div class="ui-card_head"><span class="ui-card_badge text-label">01 · Mechanizm</span><span class="ui-card_dot"></span></div>
-                  <p class="ui-card_big">Czujność, która się nie wyłącza. Lęk o&nbsp;pieniądze, który podpisuje się jako rozsądek.</p>
-                </div>
-              </div>
-              <div class="sticky-card_wrap" data-benefits-animation="card">
-                <div class="ui-card is-text">
-                  <div class="ui-card_head"><span class="ui-card_badge text-label">02 · Nazwa</span><span class="ui-card_dot"></span></div>
-                  <p class="ui-card_big">Zaczyna być czymś, z&nbsp;czym da się pracować.</p>
-                </div>
-              </div>
-              <div class="sticky-card_wrap" data-benefits-animation="card">
-                <div class="ui-card is-text">
-                  <div class="ui-card_head"><span class="ui-card_badge text-label">03 · Narzędzie</span><span class="ui-card_dot"></span></div>
-                  <p class="ui-card_big">Coś, co bierzesz do własnej firmy i&nbsp;własnego kalendarza, a&nbsp;nie teoria do zapamiętania.</p>
-                </div>
-              </div>
-            </div>
-
-            <p class="sticky-cards_note text-color-white-70">Bez pouczania. Bez „zadbaj o&nbsp;siebie”, bez „znajdź balans”, bez „myśl pozytywnie”. Prosto, czasem niewygodnie, tak jak mówi się w&nbsp;gabinecie, kiedy już sobie ufamy.</p>
-          </div>
-        </div>
+        <ul class="card-row" fade-in>
+          <li class="info-card">
+            <h3 class="heading-style-h4">Mechanizm</h3>
+            <p class="text-color-white-70">Co się dzieje w&nbsp;Twojej głowie i&nbsp;dlaczego. Czujność, która się nie wyłącza. Lęk o&nbsp;pieniądze, który podpisuje się jako rozsądek.</p>
+          </li>
+          <li class="info-card">
+            <h3 class="heading-style-h4">Nazwa</h3>
+            <p class="text-color-white-70">Rzecz nazwana przestaje być cechą charakteru. Zaczyna być czymś, z&nbsp;czym da się pracować.</p>
+          </li>
+          <li class="info-card">
+            <h3 class="heading-style-h4">Narzędzie</h3>
+            <p class="text-color-white-70">Arkusz, protokół albo jedno pytanie. Coś, co bierzesz do własnej firmy i&nbsp;własnego kalendarza, a&nbsp;nie teoria do zapamiętania.</p>
+          </li>
+        </ul>
+        <p class="section-note text-color-white-70" fade-in-self>Bez pouczania. Bez „zadbaj o&nbsp;siebie”, bez „znajdź balans”, bez „myśl pozytywnie”. Prosto, czasem niewygodnie, tak jak mówi się w&nbsp;gabinecie, kiedy już sobie ufamy.</p>
       </div>
     </div>
   </section>
@@ -363,193 +322,118 @@
   </section>
 
   <!-- ============================================================ PROGRAM -->
-  <div class="split_wrapper" id="program">
-    <section class="section_gb03" data-nav-theme="dark">
-      <div class="padding-global">
-        <div class="container-large">
-          <div class="program_head">
-            <div class="text-label is-white-70" fade-in-self>Program</div>
-            <h2 class="heading-style-h2" text-animate="lines">Siedem modułów. Komplet, żeby zrozumieć, co powoduje, że tak się czujesz, i&nbsp;co możesz z&nbsp;tym zrobić.</h2>
-            <p class="text-color-white-70 program_lead" fade-in-self>Moduły stoją jeden na drugim. Piąty nie zadziała bez audytu z&nbsp;pierwszego. Przechodzisz po kolei i&nbsp;wdrażasz od razu, zamiast zbierać PDF-y na później.</p>
-          </div>
+  <section class="section_program" id="program" data-nav-theme="dark">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="section-head">
+          <div class="text-label is-white-70" fade-in-self>Program</div>
+          <h2 class="heading-style-h2" text-animate="lines">Siedem modułów. Komplet, żeby zrozumieć, co powoduje, że tak się czujesz, i&nbsp;co możesz z&nbsp;tym zrobić.</h2>
+          <p class="section-lead text-color-white-70" fade-in-self>Moduły stoją jeden na drugim. Piąty nie zadziała bez audytu z&nbsp;pierwszego. Przechodzisz po kolei i&nbsp;wdrażasz od razu, zamiast zbierać PDF-y na później.</p>
+        </div>
+        <ol class="module-grid" fade-in>
+          <li class="module-card is-intro">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 0</span>
+              <h3 class="heading-style-h5">Zanim zaczniemy</h3>
+              <p class="text-color-white-70">Kim jest Mariusz i&nbsp;dlaczego wie, o&nbsp;czym mówi. Czym kurs jest, a&nbsp;czym nie jest. Jak go przejść, żeby zadziałał.</p>
+            </div>
+          </li>
+          <li class="module-card">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 1</span>
+              <h3 class="heading-style-h5">Gdzie jesteś naprawdę</h3>
+              <p class="text-color-white-70">Audyt ostatnich 30 dni na Twoich danych: kalendarz, czas ekranowy, energia. Ciągłe czuwanie jako mechanizm. Sygnały, że to już nie urok biznesu.</p>
+            </div>
+            <div class="module-card_tools">
+              <div class="text-label is-white-70">Narzędzia</div>
+              <ul class="tool-list">
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>arkusz audytu 30 dni</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>lista kontrolna sygnałów z&nbsp;kolumną „czym to sobie tłumaczę”</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="module-card">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 2</span>
+              <h3 class="heading-style-h5">Lęk, który prowadzi Twoją firmę</h3>
+              <p class="text-color-white-70">Stracony klient i&nbsp;bankructwo w&nbsp;głowie. Gonitwa myśli o&nbsp;trzeciej w&nbsp;nocy. „Zaraz się wyda, że nie wiem, co robię”.</p>
+            </div>
+            <div class="module-card_tools">
+              <div class="text-label is-white-70">Narzędzia</div>
+              <ul class="tool-list">
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>schemat pracy z&nbsp;czarnym scenariuszem</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>protokół nocny na jednej kartce</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>ćwiczenie na myśli „zaraz się wyda”</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="module-card">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 3</span>
+              <h3 class="heading-style-h5">Odzyskaj kontrolę, oddając kontrolę</h3>
+              <p class="text-color-white-70">Kontrola i&nbsp;adrenalina jako dwa silniki tego samego lęku. Trzy koszyki decyzji. Delegowanie bez paniki. Zasady eskalacji, które pozwalają zespołowi nie dzwonić.</p>
+            </div>
+            <div class="module-card_tools">
+              <div class="text-label is-white-70">Narzędzia</div>
+              <ul class="tool-list">
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>podział decyzji na dwa koszyki</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>zasady eskalacji dla zespołu</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="module-card">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 4</span>
+              <h3 class="heading-style-h5">Granice</h3>
+              <p class="text-color-white-70">Godzina końca pracy, która istnieje naprawdę. Telefon, który przestaje być częścią ciała. Trudne rozmowy w&nbsp;tygodnie, a&nbsp;nie w&nbsp;kwartały.</p>
+            </div>
+            <div class="module-card_tools">
+              <div class="text-label is-white-70">Narzędzia</div>
+              <ul class="tool-list">
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>ustawienia telefonu i&nbsp;kalendarza</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>rama trudnej rozmowy</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="module-card">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 5</span>
+              <h3 class="heading-style-h5">Sens i granice roli</h3>
+              <p class="text-color-white-70">Po co Ci ta firma. Moja robota i&nbsp;ich robota. Policz swoje „wystarczająco”. Motywacja celem, nie strachem. Do tego modułu prowadzi wszystko wcześniej.</p>
+            </div>
+            <div class="module-card_tools">
+              <div class="text-label is-white-70">Narzędzia</div>
+              <ul class="tool-list">
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>zdanie „po co”</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>arkusz „wystarczająco”</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>pytanie kontrolne do decyzji</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="module-card">
+            <div class="module-card_main">
+              <span class="module-card_label text-label">Moduł 6</span>
+              <h3 class="heading-style-h5">Życie z powrotem</h3>
+              <p class="text-color-white-70">Ucieczki: ekran, alkohol, robota. Sen. Tydzień projektowany od życia, a&nbsp;dopiero potem od pracy. Samotność właściciela i&nbsp;pierwsza rozmowa, jak jest naprawdę. Kiedy kurs to za mało.</p>
+            </div>
+            <div class="module-card_tools">
+              <div class="text-label is-white-70">Narzędzia</div>
+              <ul class="tool-list">
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>szablon tygodnia</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>trzy otwarcia rozmowy</span></li>
+                <li><span class="check-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.25" stroke="currentColor" stroke-width=".75"/><path d="M6 10.2l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>lista kontrolna „czas na specjalistę”</span></li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+        <div class="program_summary" fade-in-self>
+          <p class="heading-style-h5">7 modułów, 22 lekcje wideo</p>
+          <p class="text-color-white-70">Wszystkie narzędzia do pobrania: arkusze, protokoły, listy kontrolne</p>
+          <a href="#pakiety" class="button">Wybierz pakiet</a>
         </div>
       </div>
-
-      <div class="split_track" data-split-track>
-        <div class="split_sticky">
-          <div class="padding-global">
-            <div class="container-large">
-              <div class="split_comp">
-                <div class="split_steps" data-split-steps>
-
-                  <article class="split-step is-1" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-0.jpg" alt="" loading="lazy"></div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 0</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Zanim zaczniemy</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Kim jest Mariusz i&nbsp;dlaczego wie, o&nbsp;czym mówi. Czym kurs jest, a&nbsp;czym nie jest. Jak go przejść, żeby zadziałał.</p>
-                    </div>
-                  </article>
-
-                  <article class="split-step is-2" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-1.jpg" alt="" loading="lazy"></div>
-                      <div class="split_image-inner-wrap" data-split-inner>
-                        <div class="ui-card is-tool">
-                          <div class="ui-card_head"><span class="ui-card_badge text-label">Narzędzia</span><span class="ui-card_dot"></span></div>
-                          <ul class="ui-list">
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>arkusz audytu 30 dni</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>lista kontrolna sygnałów z&nbsp;kolumną „czym to sobie tłumaczę”</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 1</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Gdzie jesteś naprawdę</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Audyt ostatnich 30 dni na Twoich danych: kalendarz, czas ekranowy, energia. Ciągłe czuwanie jako mechanizm. Sygnały, że to już nie urok biznesu.</p>
-                    </div>
-                  </article>
-
-                  <article class="split-step is-3" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-2.jpg" alt="" loading="lazy"></div>
-                      <div class="split_image-inner-wrap" data-split-inner>
-                        <div class="ui-card is-tool">
-                          <div class="ui-card_head"><span class="ui-card_badge text-label">Narzędzia</span><span class="ui-card_dot"></span></div>
-                          <ul class="ui-list">
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>schemat pracy z&nbsp;czarnym scenariuszem</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>protokół nocny na jednej kartce</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>ćwiczenie na myśli „zaraz się wyda”</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 2</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Lęk, który prowadzi Twoją firmę</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Stracony klient i&nbsp;bankructwo w&nbsp;głowie. Gonitwa myśli o&nbsp;trzeciej w&nbsp;nocy. „Zaraz się wyda, że nie wiem, co robię”.</p>
-                    </div>
-                  </article>
-
-                  <article class="split-step is-4" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-3.jpg" alt="" loading="lazy"></div>
-                      <div class="split_image-inner-wrap" data-split-inner>
-                        <div class="ui-card is-tool">
-                          <div class="ui-card_head"><span class="ui-card_badge text-label">Narzędzia</span><span class="ui-card_dot"></span></div>
-                          <ul class="ui-list">
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>podział decyzji na dwa koszyki</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>zasady eskalacji dla zespołu</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 3</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Odzyskaj kontrolę, oddając kontrolę</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Kontrola i&nbsp;adrenalina jako dwa silniki tego samego lęku. Trzy koszyki decyzji. Delegowanie bez paniki. Zasady eskalacji, które pozwalają zespołowi nie dzwonić.</p>
-                    </div>
-                  </article>
-
-                  <article class="split-step is-5" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-4.jpg" alt="" loading="lazy"></div>
-                      <div class="split_image-inner-wrap" data-split-inner>
-                        <div class="ui-card is-tool">
-                          <div class="ui-card_head"><span class="ui-card_badge text-label">Narzędzia</span><span class="ui-card_dot"></span></div>
-                          <ul class="ui-list">
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>ustawienia telefonu i&nbsp;kalendarza</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>rama trudnej rozmowy</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 4</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Granice</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Godzina końca pracy, która istnieje naprawdę. Telefon, który przestaje być częścią ciała. Trudne rozmowy w&nbsp;tygodnie, a&nbsp;nie w&nbsp;kwartały.</p>
-                    </div>
-                  </article>
-
-                  <article class="split-step is-6" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-5.jpg" alt="" loading="lazy"></div>
-                      <div class="split_image-inner-wrap" data-split-inner>
-                        <div class="ui-card is-tool">
-                          <div class="ui-card_head"><span class="ui-card_badge text-label">Narzędzia</span><span class="ui-card_dot"></span></div>
-                          <ul class="ui-list">
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>zdanie „po co”</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>arkusz „wystarczająco”</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>pytanie kontrolne do decyzji</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 5</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Sens i granice roli</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Po co Ci ta firma. Moja robota i&nbsp;ich robota. Policz swoje „wystarczająco”. Motywacja celem, nie strachem. Do tego modułu prowadzi wszystko wcześniej.</p>
-                    </div>
-                  </article>
-
-                  <article class="split-step is-7" data-split-step>
-                    <div class="split_image-wrap">
-                      <div class="split_image-bg-wrap" data-split-bg><img class="split_image-bg" src="assets/img/mod-6.jpg" alt="" loading="lazy"></div>
-                      <div class="split_image-inner-wrap" data-split-inner>
-                        <div class="ui-card is-tool">
-                          <div class="ui-card_head"><span class="ui-card_badge text-label">Narzędzia</span><span class="ui-card_dot"></span></div>
-                          <ul class="ui-list">
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>szablon tygodnia</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>trzy otwarcia rozmowy</span></li>
-                            <li class="ui-list_item" data-tool-row><span class="ui-check"></span><span>lista kontrolna „czas na specjalistę”</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="split_content-wrap">
-                      <div class="split_label-wrap"><span class="text-label">Moduł 6</span></div>
-                      <h3 class="heading-style-h1 split_heading" data-split-heading>Życie z powrotem</h3>
-                      <p class="text-color-white-70 is-wrap" data-split-paragraph>Ucieczki: ekran, alkohol, robota. Sen. Tydzień projektowany od życia, a&nbsp;dopiero potem od pracy. Samotność właściciela i&nbsp;pierwsza rozmowa, jak jest naprawdę. Kiedy kurs to za mało.</p>
-                    </div>
-                  </article>
-                </div>
-
-                <div class="split_timeline-wrapper" aria-hidden="true">
-                  <div class="split_timeline-steps-wrap" data-split-timeline>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 0</span><span class="split_timeline-step-icon"></span></div>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 1</span><span class="split_timeline-step-icon"></span></div>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 2</span><span class="split_timeline-step-icon"></span></div>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 3</span><span class="split_timeline-step-icon"></span></div>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 4</span><span class="split_timeline-step-icon"></span></div>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 5</span><span class="split_timeline-step-icon"></span></div>
-                    <div class="split_timeline-step"><span class="text-label">Moduł 6</span><span class="split_timeline-step-icon"></span></div>
-                  </div>
-                  <div class="split_timeline-line-wrap">
-                    <div class="split_timeline-line-top"></div>
-                    <div class="split_timeline-pointed"><div class="split_timeline-circle" data-split-circle></div></div>
-                    <div class="split_timeline-line-bottom"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="split-m_sticky-wrap" data-split-mobile-progress aria-hidden="true">
-          <div class="split-m_top">
-            <span class="text-label" data-split-m-current>Moduł 0</span>
-            <div class="split-m_timeline-steps">
-              <span class="text-label" data-split-m-label>0</span><span class="text-label" data-split-m-label>1</span><span class="text-label" data-split-m-label>2</span><span class="text-label" data-split-m-label>3</span><span class="text-label" data-split-m-label>4</span><span class="text-label" data-split-m-label>5</span><span class="text-label" data-split-m-label>6</span>
-            </div>
-          </div>
-          <div class="split-m_timeline-wrap"><div class="split-m_dotted-line"></div><div class="split-m_line" data-split-m-line></div><div class="split-m_circle" data-split-m-circle></div></div>
-        </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- ============================================================ CO DOSTAJESZ / CZEGO NIE OBIECUJEMY -->
   <section class="section_promise" data-nav-theme="dark">
@@ -586,7 +470,7 @@
   <section class="section_packages" id="pakiety" data-nav-theme="dark">
     <div class="padding-global">
       <div class="container-large">
-        <div class="packages_head">
+        <div class="section-head">
           <div class="text-label is-white-70" fade-in-self>Pakiety</div>
           <h2 class="heading-style-h2" text-animate="lines">Dwa pakiety. Ten sam kurs.</h2>
         </div>
